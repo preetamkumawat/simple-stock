@@ -92,16 +92,21 @@ class SimpleStock:
             return 0
 
     def calculate_pe_ratio(self):
+        """
+        Calculates PE ratio for the stock provided in input
+        :return: float
+        """
         try:
             return operator.div(self.market_price, self.stock_details["last_divident"])
         except ZeroDivisionError:
             return 0
 
-    def check_previous_stocks(self):
+    @staticmethod
+    def check_previous_stocks():
         """
         This functions loops through our trades stored in memory and returns volumn weighted stock price and
         all share index
-        :return:
+        :return: dict
         """
         timestamp_15 = time.time() - 900
         sum_trade_quantity = 0
@@ -134,7 +139,7 @@ def validate_params(params):
     1: quantity
     2: market price
     3: trade type (buy/sell)
-    :return:
+    :return: Status (bool), Message (str)
     """
     status = True
     msg = []
