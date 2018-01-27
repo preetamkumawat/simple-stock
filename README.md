@@ -20,7 +20,9 @@ The input prompt will ask for different input params as below:
 ## Sample test cases:
 In file **test.py** we have got few params which we can adjust to define our own test cases and run the script agains them with command:
 
-```python test.py```
+```
+python test.py
+```
 
 The parameters are displayed in order in which they are taken in **main.py** terminal:
 ```
