@@ -17,7 +17,7 @@ The input prompt will ask for different input params as below:
 >*The input params should be separated by spaces*
 
 
-### Sample test cases:
+## Sample test cases:
 In file **test.py** we have got few params which we can adjust to define our own test cases and run the script agains them with command:
 
 ```python test.py```
